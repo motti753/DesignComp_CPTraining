@@ -1,0 +1,330 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+}
+
+/* common */
+h1,
+h2,
+h3 {
+  font-family: Open Sans, sans-serif;
+  font-weight: normal;
+  margin: 0;
+}
+
+header,
+main,
+.kv,
+.header img,
+.hero img,
+.item img {
+  background: url(<path-to-image>), #fdf9f2 50% / cover no-repeat;
+}
+
+.header,
+.main {
+  background: #fdf9f2;
+}
+
+p {
+  font-family: Noto Sans JP;
+}
+/* common */
+
+
+/* summary */
+.summary {
+  text-align: center;
+}
+
+.summary h1{
+  font-size: 16px;
+  margin: 0 auto;
+  color: #f00;
+}
+
+/* summary */
+/* header */
+.header {
+  background-image: url(img/logo.png),url(img/kv-img.png);
+  height: 100%;
+  margin: 0;
+  position: relative;
+}
+.header .hedmain {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.header .hedlogo {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 50%;
+  height: 40%;
+  background: #11ffee00;
+}
+
+/* header */
+
+/* main */
+/* concept */
+h1 {
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: 2.88px;
+  line-height: 36px;
+  padding: 64px 0;
+  text-align: center;
+  text-decoration: underline 1px;
+  text-underline-offset: 15px;
+}
+
+.text {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 60%;
+}
+
+.hero {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.text h2 {
+  font-size: 32px;
+  font-family: Sans JP;
+  letter-spacing: 2.16px;
+}
+
+.text h3 {
+  font-size: 64px;
+  font-weight: normal;
+  letter-spacing: 6.72px;
+}
+
+.text p {
+  font-family: Open Sans, sans-serif;
+  letter-spacing: 1.12px;
+  line-height: 24px;
+}
+
+.hero img {
+  width: 50%;
+  flex-shrink: 0;
+}
+
+/* concept */
+
+/* menu */
+.menu {
+  padding: 32px 0;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 64px;
+  justify-content: center;
+  padding: 32px 0;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 500px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item .title,
+.item .money {
+  letter-spacing: 2px;
+}
+
+.item .title {
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 45px;
+  white-space: nowrap;
+}
+
+.item .money {
+  text-align: right;
+}
+
+/* menu  */
+
+/* separate */
+.separate img {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+/* separate */
+
+/* shop */
+.frame2 {
+  background: #fff;
+}
+
+.shop {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 32px;
+  justify-content: center;
+  margin: auto;
+  padding: 96px 144px;
+}
+
+.shop img {
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+  display: block;
+  width: 100%;
+}
+
+.shoptext {
+  display: flex;
+  flex-direction: column;
+  margin:  0 16px;
+}
+
+.shoptext p {
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  line-height: 28px;
+  width: 100%;
+}
+
+/* shop  */
+/* main */
+
+/* footer */
+/* kv */
+.kv {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 32px 0;
+}
+
+.end {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.end img {
+  width: 50%;
+  height: 50%;
+}
+
+.end p {
+  font-size: 8px;
+  letter-spacing: 1.1px;
+  line-height: 20px;
+}
+
+/* kv */
+
+/* foo */
+.foo {
+  align-items: center;
+  background: #000;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+}
+
+.foo small {
+  color: #fff;
+  font-family: Noto Serif JP;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+}
+/* foo */
+/* footer */
+
+@media (max-width: 1070px){
+  .hero h3 {
+    font-size: 55px;
+  }
+
+  .shop {
+    flex-direction: column;
+    padding: 96px 0;
+  }
+}
+
+@media (max-width: 720px){
+  .hero {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .hero img {
+    width: 80%;
+  }
+
+  .hero .text {
+    width: 95%;
+  }
+
+  .hero h3 {
+    letter-spacing: 5px;
+  }
+
+  .kv {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px){
+  .item {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  /* header */
+  .header {
+    text-align: center;
+    width: 100%;
+    height: 540px;
+  }
+
+  .header .hedmain {
+    object-fit: cover;
+  }
+
+  .header .hedlogo {
+    width: 80%;
+    height: 30%;
+    top: 30%;
+    left: 10%;
+  }
+  /* header */
+
+  /* main  */
+
+  /* main  */
+}
